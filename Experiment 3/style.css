@@ -9,7 +9,6 @@ body {
     transition: all 0.4s ease;
 }
 
-/* HERO */
 .hero {
     display: flex;
     align-items: center;
@@ -36,7 +35,6 @@ body {
     object-fit: cover;
 }
 
-/* SECTIONS */
 .section {
     padding: 70px 20px;
     text-align: center;
@@ -46,7 +44,6 @@ body {
     background: var(--bg-alt);
 }
 
-/* CARDS */
 .card-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -72,7 +69,6 @@ body {
     transform: translateY(-6px);
 }
 
-/* DOM LIST */
 #dynamicList {
     list-style: none;
     padding: 0;
@@ -99,7 +95,6 @@ footer a {
     margin: 0 12px;
 }
 
-/* BUTTONS */
 button {
     margin: 6px;
     padding: 8px 16px;
@@ -110,9 +105,6 @@ button {
     color: white;
 }
 
-/* ================= THEME VARIABLES ================= */
-
-/* DEFAULT */
 .theme-default {
     --bg-main: #f9f9f9;
     --bg-section: #ffffff;
@@ -122,7 +114,6 @@ button {
     --text-main: #222;
 }
 
-/* GREEN */
 .theme-green {
     --bg-main: #f2f8f4;
     --bg-section: #ffffff;
@@ -132,7 +123,6 @@ button {
     --text-main: #2f3e34;
 }
 
-/* PINK */
 .theme-pink {
     --bg-main: #fff0f6;
     --bg-section: #ffffff;
@@ -142,7 +132,6 @@ button {
     --text-main: #4a2c3d;
 }
 
-/* BLUE */
 .theme-blue {
     --bg-main: #eef4ff;
     --bg-section: #ffffff;
@@ -152,7 +141,6 @@ button {
     --text-main: #1f2e4d;
 }
 
-/* PEACH */
 .theme-peach {
     --bg-main: #fff6eb;
     --bg-section: #ffffff;
@@ -165,4 +153,5 @@ button {
 body {
     background: var(--bg-main);
     color: var(--text-main);
+
 }
