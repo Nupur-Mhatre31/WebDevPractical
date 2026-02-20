@@ -1,4 +1,3 @@
-/* Typing Effect */
 const roles = [
     "Computer Science Student",
     "Aspiring Software Developer",
@@ -36,15 +35,11 @@ function typeLoop() {
 }
 typeLoop();
 
-/* DOM PRACTICAL */
-
-/* Change paragraph */
 function changeText() {
     document.getElementById("demoText").innerText =
         "I continuously improve my technical and analytical skills through practical application.";
 }
 
-/* Dynamic list */
 let highlights = [
     "Completed Web Development Practical",
     "Implemented DOM Manipulation Tasks",
@@ -73,7 +68,7 @@ function removeItem() {
     }
 }
 
-/* Theme switch */
 function setTheme(theme) {
     document.body.className = theme;
+
 }
