@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.4s ease;
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 70px 20px;
+}
+
+.profile-ring {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary);
+}
+
+.profile-ring img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* SECTIONS */
+.section {
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.section.alt {
+    background: var(--bg-alt);
+}
+
+/* CARDS */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.card-grid.single {
+    grid-template-columns: 1fr;
+    max-width: 600px;
+    margin: auto;
+}
+
+.card {
+    background: var(--bg-section);
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 12px 28px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+/* DOM LIST */
+#dynamicList {
+    list-style: none;
+    padding: 0;
+}
+
+#dynamicList li {
+    margin: 8px;
+    padding: 8px;
+    border-radius: 8px;
+    background: var(--bg-alt);
+}
+
+/* HEADER & FOOTER */
+.header, footer {
+    text-align: center;
+    padding: 40px 20px;
+    background: var(--primary);
+    color: white;
+}
+
+footer a {
+    color: white;
+    font-size: 22px;
+    margin: 0 12px;
+}
+
+/* BUTTONS */
+button {
+    margin: 6px;
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    background: var(--primary-light);
+    color: white;
+}
+
+/* ================= THEME VARIABLES ================= */
+
+/* DEFAULT */
+.theme-default {
+    --bg-main: #f9f9f9;
+    --bg-section: #ffffff;
+    --bg-alt: #f2f2f2;
+    --primary: #333333;
+    --primary-light: #555555;
+    --text-main: #222;
+}
+
+/* GREEN */
+.theme-green {
+    --bg-main: #f2f8f4;
+    --bg-section: #ffffff;
+    --bg-alt: #e8f5ee;
+    --primary: #5aa897;
+    --primary-light: #6fbf9f;
+    --text-main: #2f3e34;
+}
+
+/* PINK */
+.theme-pink {
+    --bg-main: #fff0f6;
+    --bg-section: #ffffff;
+    --bg-alt: #ffe6f0;
+    --primary: #e48bb0;
+    --primary-light: #f3a6c8;
+    --text-main: #4a2c3d;
+}
+
+/* BLUE */
+.theme-blue {
+    --bg-main: #eef4ff;
+    --bg-section: #ffffff;
+    --bg-alt: #e0ecff;
+    --primary: #4f7dd8;
+    --primary-light: #6a9cf0;
+    --text-main: #1f2e4d;
+}
+
+/* PEACH */
+.theme-peach {
+    --bg-main: #fff6eb;
+    --bg-section: #ffffff;
+    --bg-alt: #ffe9d6;
+    --primary: #ff9a76;
+    --primary-light: #ffb88c;
+    --text-main: #4a2f1f;
+}
+
+body {
+    background: var(--bg-main);
+    color: var(--text-main);
+}

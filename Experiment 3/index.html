@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        h2 { font-family: 'Playfair Display', serif; }
+    </style>
+</head>
+
+<body class="theme-default">
+
+<!-- HEADER -->
+<header class="header">
+    <h1 style="color:white;">Nupur Mhatre</h1>
+    <p id="typing"></p>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="profile-ring">
+        <img src="profile.jpeg" alt="Profile Image">
+    </div>
+
+    <div class="hero-text">
+        <h2>Introduction</h2>
+        <p>
+            I am a Computer Science student passionate about building structured,
+            clean, and meaningful web experiences.
+        </p>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section alt">
+    <h2>More About Me</h2>
+
+    <div class="card-grid">
+        <div class="card">
+            <h3>Academic Background</h3>
+            <p>Pursuing Computer Science with focus on fundamentals and practical implementation.</p>
+        </div>
+
+        <div class="card">
+            <h3>Learning Approach</h3>
+            <p>I believe in strong conceptual understanding before applying concepts practically.</p>
+        </div>
+
+        <div class="card">
+            <h3>Career Direction</h3>
+            <p>Aspiring to become a skilled software developer with analytical thinking.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ACADEMIC PROJECTS -->
+<section class="section">
+    <h2>Academic Projects</h2>
+
+    <div class="card-grid single">
+        <div class="card">
+            <h3>Course-Based Mini Projects</h3>
+            <p>
+                Developed mini projects using HTML, CSS and JavaScript
+                as part of academic coursework.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- DOM PRACTICAL -->
+<section class="section alt">
+    <h2>Interactive Portfolio Section</h2>
+
+    <div class="card dom-card">
+        <h3>Professional Statement</h3>
+        <p id="demoText">
+            I focus on strengthening my technical foundations through consistent practice.
+        </p>
+        <button onclick="changeText()">Update Statement</button>
+    </div>
+
+    <div class="card dom-card">
+        <h3>Academic Highlights</h3>
+        <ul id="dynamicList"></ul>
+        <button onclick="addItem()">Add Highlight</button>
+        <button onclick="removeItem()">Remove Last</button>
+    </div>
+
+    <div class="card dom-card">
+        <h3>Select Portfolio Theme</h3>
+        <button onclick="setTheme('theme-default')">Default</button>
+        <button onclick="setTheme('theme-green')">Green</button>
+        <button onclick="setTheme('theme-pink')">Pink</button>
+        <button onclick="setTheme('theme-blue')">Blue</button>
+        <button onclick="setTheme('theme-peach')">Peach</button>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <a href="#"><i class="fa-brands fa-github"></i></a>
+    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
