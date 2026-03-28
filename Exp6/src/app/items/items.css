@@ -1,0 +1,37 @@
+.heading {
+  text-align: center;
+  margin: 20px;
+  color: #4b3832; /* dark coffee */
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 18px;
+  padding: 20px;
+}
+
+.card {
+  background: #8b6f61; /* coffee brown */
+  padding: 18px;
+  border-radius: 12px;
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  font-size: 17px;
+  color: #fff;
+}
+
+.card p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #fdf6f0; /* soft readable text */
+}
